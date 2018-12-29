@@ -1,0 +1,89 @@
+/* Global */
+
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+body {
+    width: 70%;
+    height: 100vh;
+    margin: 0 auto;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: "Nuninto" , sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 250px;
+    height: 240px;
+}
+
+/* Starting Screen */
+
+#main-header img {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
+
+#pick-starter h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #FFDE00;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+#starters {
+    display: flex;
+}
+
+#starters img {
+    margin: 0 auto;
+}
+
+/* Enemy Portion */
+
+#pick-enemy-attack {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #FF0000;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+#pick-enemy {
+    display: flex;
+}
+
+#pick-enemy img {
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+#enemy-selected {
+    display: flex;
+}
+
+#picked-enemy {
+    margin: 0 auto;
+}
+
+#picked-enemy h3 {
+    color: #FFDE00;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Attack Button */
+
+#attackBtn {
+    padding: 1rem;
+    width: 600px;
+    margin: 1.5rem auto;
+
+}

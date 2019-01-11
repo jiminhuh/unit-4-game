@@ -13,34 +13,38 @@
     <title>Crystal Game</title>
 </head>
 <body>
-    <h1 id="title">Crystal Collector</h1>
-    <!-- two divs will be next to each other -->
-    <div id="section">
-        <div id="random-number-div">
-            <h2>This is your random number</h2>
-            <h3 id="random-number">30</h3>
+    <div class="container">
+        <h1 id="title">Crystal Collector</h1>
+        <!-- two divs will be next to each other -->
+        <div id="section">
+            <div id="random-number-div">
+                <h2>This is your random number:</h2>
+                <h3 id="random-number">30</h3>
+            </div>
+            <div id="win-loss-div">
+                <h3>Wins: <span id="win"></span></h3>
+                <h3>Losses: <span id="loss"></span></h3>
+            </div>
         </div>
-        <div id="win-loss-div">
-            <h3>Wins: <span id="win"></span></h3>
-            <h3>Losses: <span id="loss"></span></h3>
+
+        <!-- Four buttons(made from imgs) to click -->
+        <div id="img-div">
+            <img src="images/bluecrystal.jpeg" alt="bluecrystal" id="blue-crystal">
+            <img src="images/purplecrystal.jpeg" alt="purplecrystal" id="purple-crystal">
+            <img src="images/diamondcrystal.jpeg" alt="diamondcrystal" id="diamond-crystal">
+            <img src="images/whitecrystal.jpeg" alt="whitecrystal" id="white-crystal">
         </div>
+
+        <!-- Score Section-->
+        <div id="score-div">
+            <h3>Your score is:</h3>
+            <h3 id="score">60</h3>
+        </div>
+
+        <!-- Reset Button -->
+        <button id="reset-btn">Reset</button>
+
     </div>
-
-    <!-- Four buttons(made from imgs) to click -->
-    <div id="img-div">
-        <img src="images/bluecrystal.jpeg" alt="bluecrystal" id="blue-crystal">
-        <img src="images/purplecrystal.jpeg" alt="purplecrystal" id="purple-crystal">
-        <img src="images/diamondcrystal.jpeg" alt="diamondcrystal" id="diamond-crystal">
-        <img src="images/whitecrystal.jpeg" alt="whitecrystal" id="white-crystal">
-    </div>
-
-    <!-- Score Section-->
-    <div id="score-div">
-        <h3>Your score is:</h3>
-        <h3 id="score"></h3>
-    </div>
-
-
     <script src="javascript/game.js"></script>
 </body>
 </html>

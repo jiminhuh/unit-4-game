@@ -14,6 +14,11 @@ body {
     background: url(../images/background.jpg);
 }
 
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
 /* Title */
 #title {
   font-family: 'Open Sans', sans-serif;
@@ -50,6 +55,7 @@ body {
     padding-top: 2rem;
     margin: 0 auto;
     font-size: 42px;
+    color: rgb(77, 156, 77);
 }
 
 /* win & loss div */
@@ -67,11 +73,11 @@ body {
 }
 
 #win {
-    color: blue;
+    color: rgb(77, 156, 77);
 }
 
 #losses {
-    color: red;
+    color: rgb(156, 21, 21);
 }
 
 /* Images */
@@ -84,7 +90,23 @@ img {
     width: 150px;
     height: 150px;
     padding: 0.5rem;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 /* Score Section */
 
+#score-div h3 {
+    font-size: 1.3rem;
+}
+
+#score-div {
+    margin-top: 2rem;
+    display: flex;
+}
+
+#score {
+    padding-left: 2rem;
+    color: rgb(156, 21, 21);
+}
+
+/* Reset Button */

@@ -110,3 +110,14 @@ img {
 }
 
 /* Reset Button */
+
+#reset-btn {
+    padding: 0.7rem;
+    margin-top: 2rem;
+    border-radius: 7px;
+    font-weight: 600;
+}
+
+#reset-btn:active {
+    background-color: rgb(77, 156, 77);
+}

@@ -1,5 +1,5 @@
 //When Page loads random Number is generated 20 ~ 120.
-//When Page loads each crystal will be given a random value between 1 ~ 15.
+//When Page loads each crystal will be given a random value between 1 ~ 12.
 //clicking each crystal will add to "Your score is" value
 //If you hit the random number value, You win, then add 1 to Wins.
 //If you go over the number, You lose, then add 1 to Loss.
@@ -8,10 +8,10 @@
 var game = {
     // object variables
     randomNumber: (Math.floor(Math.random()*100)+20),
-    blueCrystal: (Math.floor(Math.random()*15)+1),
-    purpleCrystal: (Math.floor(Math.random()*15)+1),
-    diamondCrystal: (Math.floor(Math.random()*15)+1),
-    whiteCrystal: (Math.floor(Math.random()*15)+1),
+    blueCrystal: (Math.floor(Math.random()*12)+1),
+    purpleCrystal: (Math.floor(Math.random()*12)+1),
+    diamondCrystal: (Math.floor(Math.random()*12)+1),
+    whiteCrystal: (Math.floor(Math.random()*12)+1),
 
     score: 0,
     winCounter: 0,
@@ -86,21 +86,14 @@ var game = {
     },
     // Reset method
     reset: function() {
-        this.randomNumber = (Math.floor(Math.random()*100)+50);
-        this.blueCrystal = (Math.floor(Math.random()*15)+1);
-        this.purpleCrystal = (Math.floor(Math.random()*15)+1);
-        this.diamondCrystal = (Math.floor(Math.random()*15)+1);
-        this.whiteCrystal = (Math.floor(Math.random()*15)+1);
+        this.randomNumber = (Math.floor(Math.random()*100)+20);
+        this.blueCrystal = (Math.floor(Math.random()*12)+1);
+        this.purpleCrystal = (Math.floor(Math.random()*12)+1);
+        this.diamondCrystal = (Math.floor(Math.random()*12)+1);
+        this.whiteCrystal = (Math.floor(Math.random()*12)+1);
         this.score = 0;
+        
         $("#score").text(0);
-    },
-
-    resetBtn: function () {
-        $("#reset-btn").on("click", function() {
-            this.reset();
-            $("#win").text("");
-            $("#loss").text("");
-        })
     }
 }
 

@@ -76,7 +76,7 @@ body {
     color: rgb(77, 156, 77);
 }
 
-#losses {
+#loss {
     color: rgb(156, 21, 21);
 }
 
@@ -109,15 +109,3 @@ img {
     color: rgb(156, 21, 21);
 }
 
-/* Reset Button */
-
-#reset-btn {
-    padding: 0.7rem;
-    margin-top: 2rem;
-    border-radius: 7px;
-    font-weight: 600;
-}
-
-#reset-btn:active {
-    background-color: rgb(77, 156, 77);
-}
